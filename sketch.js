@@ -12,7 +12,7 @@ function draw() {
   rect(car.x, 198, 110, 50);
   fill(255);
   ellipse(car.x, car.y, 40, 40);
-  ellipse(car.x + 110, 250, 40, 40);
+  ellipse(car.x + 110, car.y, 40, 40);
   
   //condition si la voiture touche le bord droit : reviens en arrière	
   if (car.x + 110 >= width || car.x < 0) {
